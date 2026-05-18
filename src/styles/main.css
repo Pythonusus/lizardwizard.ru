@@ -1,4 +1,15 @@
-/* Base styles */
+@import url("bootstrap/dist/css/bootstrap.min.css");
+@import url("bootstrap-icons/font/bootstrap-icons.css");
+@import url("fonts.css");
+@import url("themes.css");
+@import url("ui/header.css");
+@import url("ui/utilities.css");
+@import url("ui/footer.css");
+@import url("ui/components.css");
+
+html,
 body {
-  margin: 0;
+  font-family: Raleway, sans-serif;
+  background: var(--theme-bg);
+  color: var(--theme-text);
 }

@@ -1,3 +1,4 @@
+import { resolve } from "node:path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
@@ -8,15 +9,14 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        index: "pages/index.html",
-        // add other pages here
-        // about: "pages/about.html",
-        // contacts: "pages/contacts.html",
+        index: resolve(__dirname, "src/index.html"),
+        // add more pages here as you create them
+        // about: resolve(__dirname, "src/about.html"),
+        // contacts: resolve(__dirname, "src/contacts.html"),
       },
     },
   },
   server: {
     port: 3000,
-    open: "/pages/index.html",
   },
 });

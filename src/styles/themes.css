@@ -1,0 +1,152 @@
+:root,
+[data-theme="default"] {
+  /* =========================================================
+     THEME: DEFAULT
+     This block is both:
+     1) the fallback theme via :root
+     2) the explicit "default" theme via [data-theme="default"]
+     ========================================================= */
+
+  /* ---------------- GLOBAL ----------------
+     Page-level colors used by html/body and shared UI elements.
+     These are the core palette anchors. */
+  --theme-bg: #f8f8f8;
+  --theme-surface: #fff;
+  --theme-surface-soft: #f1f1f1;
+  --theme-text: #122036;
+  --theme-text-muted: #4b4b4b;
+  --theme-border: #c3c3c3f0;
+  --theme-primary: #05f;
+  --theme-primary-hover: #0055ffc7;
+  --theme-link: #939393;
+
+  /* ---------------- HEADER ----------------
+     Dedicated tokens for the top navigation area.
+     Keeping header tokens separate makes it easy to create
+     high-contrast headers without affecting the whole page. */
+  --theme-header-bg: #131129;
+  --theme-header-border: #09071d;
+  --theme-header-text: #f5f5f5;
+  --theme-header-link: #81e067;
+  --theme-header-link-hover: #c0eeb4;
+
+  /* ---------------- MAIN ----------------
+     Tokens used by content area blocks/cards/buttons.
+     These are mapped in main.css to actual selectors. */
+  --theme-card-bg: var(--theme-surface);
+  --theme-card-border: var(--theme-border);
+  --theme-card-subtle-bg: var(--theme-surface-soft);
+  --theme-btn-primary-bg: var(--theme-primary);
+  --theme-btn-primary-border: var(--theme-primary);
+  --theme-btn-primary-hover-bg: var(--theme-primary-hover);
+  --theme-btn-primary-hover-border: var(--theme-primary-hover);
+
+  /* ---------------- FOOTER ----------------
+     Footer gets independent background + link controls so
+     it can stay visually light while header is darker. */
+  --theme-footer-bg: var(--theme-bg);
+  --theme-footer-link: var(--theme-text-muted);
+  --theme-footer-link-hover: var(--theme-link);
+
+  /* ---------------- BOOTSTRAP BRIDGE ----------------
+     Mirrors custom theme tokens into Bootstrap CSS variables
+     so built-in Bootstrap components follow the same theme.
+     Keep these mappings here for easy full-theme overrides. */
+  --bs-body-bg: var(--theme-bg);
+  --bs-body-color: var(--theme-text);
+  --bs-secondary-color: var(--theme-text-muted);
+  --bs-border-color: var(--theme-border);
+  --bs-primary: var(--theme-primary);
+  --bs-primary-rgb: 0, 81, 255;
+  --bs-link-color: var(--theme-link);
+  --bs-link-hover-color: var(--theme-primary-hover);
+}
+
+[data-theme="alternative"] {
+  /* =========================================================
+     THEME: ALTERNATIVE
+     Secondary palette option (Dracula-inspired contrast).
+     Same variable structure as default for easy override/swap.
+     ========================================================= */
+
+  /* ---------------- GLOBAL ---------------- */
+  --theme-bg:
+    radial-gradient(
+      48rem 32rem at 49% 27%,
+
+      rgb(98 162 235 / 0.42) 0%,
+      rgb(98 162 235 / 0.2) 34%,
+      rgb(98 162 235 / 0.08) 56%,
+      rgb(98 162 235 / 0%) 86%
+    ),
+    radial-gradient(
+      38rem 34rem at 34% 58%,
+      rgb(44 52 198 / 0.42) 0%,
+      rgb(44 52 198 / 0.22) 38%,
+      rgb(44 52 198 / 0.09) 58%,
+      rgb(44 52 198 / 0%) 88%
+    ),
+    radial-gradient(
+      42rem 36rem at 61% 62%,
+      rgb(218 50 112 / 0.46) 0%,
+      rgb(218 50 112 / 0.24) 36%,
+      rgb(218 50 112 / 0.1) 58%,
+      rgb(218 50 112 / 0%) 88%
+    ),
+    radial-gradient(
+      65rem 50rem at -10% -5%,
+      rgba(133, 8, 93, 0.309) 50%,
+      rgba(159, 40, 113, 0) 100%
+    ),
+    radial-gradient(
+      50rem 40rem at 100% -10%,
+      rgba(255, 0, 123, 0.171) 0%,
+      rgb(0 210 255 / 0%) 66%
+    ),
+    radial-gradient(
+      30rem 50rem at 50% 100%,
+      rgba(138, 84, 255, 0.074) 15%,
+      rgba(127, 67, 255, 0.015) 62%
+    ),
+    linear-gradient(60deg, rgb(8, 3, 55) 20%, rgb(18, 4, 43) 100%);
+  --theme-surface: rgb(19 15 48 / 74%);
+  --theme-surface-soft: rgb(23 18 58 / 62%);
+  --theme-text: #f8f4ff;
+  --theme-text-muted: #cdc5ef;
+  --theme-border: rgb(223 210 255 / 24%);
+  --theme-primary: #f02d6c;
+  --theme-primary-hover: #ff4b86;
+  --theme-link: #9fc8ff;
+
+  /* ---------------- HEADER ---------------- */
+  --theme-header-bg: rgb(17 10 54 / 26%);
+  --theme-header-border: rgb(219 208 255 / 28%);
+  --theme-header-text: #ececec;
+  --theme-header-link: #ececec;
+  --theme-header-link-hover: #ecececc9;
+  --theme-header-backdrop-filter: blur(14px) saturate(145%);
+
+  /* ---------------- MAIN ---------------- */
+  --theme-card-bg: var(--theme-surface);
+  --theme-card-border: var(--theme-border);
+  --theme-card-subtle-bg: var(--theme-surface-soft);
+  --theme-btn-primary-bg: var(--theme-primary);
+  --theme-btn-primary-border: var(--theme-primary);
+  --theme-btn-primary-hover-bg: var(--theme-primary-hover);
+  --theme-btn-primary-hover-border: var(--theme-primary-hover);
+
+  /* ---------------- FOOTER ---------------- */
+  --theme-footer-bg: rgb(17 10 54 / 20%);
+  --theme-footer-link: #ececec;
+  --theme-footer-link-hover: #ecececc9;
+
+  /* ---------------- BOOTSTRAP BRIDGE ---------------- */
+  --bs-body-bg: var(--theme-bg);
+  --bs-body-color: var(--theme-text);
+  --bs-secondary-color: var(--theme-text-muted);
+  --bs-border-color: var(--theme-border);
+  --bs-primary: var(--theme-primary);
+  --bs-primary-rgb: 255, 121, 198;
+  --bs-link-color: var(--theme-link);
+  --bs-link-hover-color: var(--theme-primary-hover);
+}

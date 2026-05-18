@@ -1,0 +1,15 @@
+.card {
+  background-color: var(--theme-card-bg);
+  border-color: var(--theme-card-border);
+}
+
+.card-subtle {
+  background-color: var(--theme-card-subtle-bg);
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--theme-btn-primary-bg);
+  --bs-btn-border-color: var(--theme-btn-primary-border);
+  --bs-btn-hover-bg: var(--theme-btn-primary-hover-bg);
+  --bs-btn-hover-border-color: var(--theme-btn-primary-hover-border);
+}

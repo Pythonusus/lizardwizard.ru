@@ -1,0 +1,14 @@
+#footer {
+  background-color: var(--theme-footer-bg);
+  border-color: var(--theme-border);
+}
+
+.footer-link {
+  color: var(--theme-footer-link);
+  transition: color 220ms ease;
+}
+
+.footer-link:hover,
+.footer-link:focus-visible {
+  color: var(--theme-footer-link-hover);
+}
