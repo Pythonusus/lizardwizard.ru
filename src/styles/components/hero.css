@@ -103,15 +103,3 @@
     border-color: transparent;
   }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-typing {
-    visibility: visible;
-  }
-
-  .hero-typing::before {
-    content: none;
-    border-right: none;
-    animation: none;
-  }
-}

@@ -25,10 +25,6 @@
   transform: scaleX(1);
 }
 
-.no-underline {
-  text-decoration: none;
-}
-
 /* =========================================================
    UTILITIES: REDUCED MOTION
    This utility is used to disable animations when the user has requested reduced motion.
