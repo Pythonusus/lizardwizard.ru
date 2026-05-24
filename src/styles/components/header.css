@@ -32,7 +32,7 @@
   display: inline-block;
   flex: 0 0 auto;
   background-color: currentcolor;
-  mask-image: url("/assets/telegram.svg");
+  mask-image: url("/assets/svg/telegram.svg");
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;

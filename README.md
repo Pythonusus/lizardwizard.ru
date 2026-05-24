@@ -1,3 +1,3 @@
-# [lizardwizard.ru](http://lizardwizard.ru)
+# [pythonusus.ru](http://pythonusus.ru)
 
-### Static website for listing my pet projects.
+### Petr Malafeev Python backend developer portfolio website
