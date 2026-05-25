@@ -7,8 +7,8 @@
     filter 220ms ease;
 }
 
-.card:hover,
-.card:focus-visible {
+.card-hover:hover,
+.card-hover:focus-visible {
   transform: scale(1.04);
   filter: brightness(1.1);
   box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
